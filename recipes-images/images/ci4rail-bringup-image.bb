@@ -87,4 +87,5 @@ IMAGE_INSTALL += " \
     nano \
     networkmanager \
     modemmanager \
+    gpsdtestclient \
 "
