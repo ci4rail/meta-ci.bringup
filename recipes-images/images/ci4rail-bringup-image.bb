@@ -88,4 +88,6 @@ IMAGE_INSTALL += " \
     networkmanager \
     modemmanager \
     gpsdtestclient \
+    disktest \
+    eth-test-raw \
 "
