@@ -1,15 +1,17 @@
 #!/usr/bin/python3
 
-import http.server
 import argparse
+import sys
 import os
 import socket
 import ssl
 import threading
 import time
+import http.server
 
 EEPROM_SIZE=512
-CERT_DIR="/usr/lib/netio-dfu"
+#CERT_DIR="/usr/lib/netio-dfu"
+CERT_DIR="."
 
 class HTTPS_Server(threading.Thread):
 
@@ -39,14 +41,11 @@ def main(args):
     if not args.no_eeprom:
         data = s.recv(EEPROM_SIZE)
 
-    url = args.myip + ":" + args.port + "/" + args.fwfile
+    url = "https://" + args.myip + ":" + str(args.port) + "/" + args.fwfile
     print(f"Sending URL={url}")
     s.send(url.encode())
-    print("wait for socket close")
-    s.recv()
-    https_thread.join()
-
-
+    print("Press CTRL-C to exit")
+    
 
 tool_description = """
 Tool to load firmware into NETIO module via network.
@@ -62,7 +61,7 @@ def command_line_args_parsing():
         "--port",
         help="TCP Port to serve file (default: 8070)",
         type=int,
-        default=None,
+        default=8070,
     )
     parser.add_argument(
         "-v",
