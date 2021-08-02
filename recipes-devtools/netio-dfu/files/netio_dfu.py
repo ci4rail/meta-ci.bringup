@@ -10,8 +10,8 @@ import time
 import http.server
 
 EEPROM_SIZE=512
-#CERT_DIR="/usr/lib/netio-dfu"
-CERT_DIR="."
+CERT_DIR="/usr/lib/netio-dfu"
+#CERT_DIR="."
 
 class HTTPS_Server(threading.Thread):
 
