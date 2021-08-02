@@ -90,4 +90,8 @@ IMAGE_INSTALL += " \
     gpsdtestclient \
     disktest \
     eth-test-raw \
+    netio-monitor \
+    dfu-util \
+    netio-dfu \
+    dhcp-server \
 "
