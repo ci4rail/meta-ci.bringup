@@ -87,6 +87,8 @@ IMAGE_INSTALL += " \
     nano \
     networkmanager \
     modemmanager \
+    chrony \
+    chronyc \
     gpsdtestclient \
     disktest \
     eth-test-raw \
