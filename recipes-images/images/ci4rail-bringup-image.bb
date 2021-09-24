@@ -86,6 +86,7 @@ IMAGE_INSTALL += " \
     minicom \
     nano \
     networkmanager \
+    networkmanager-nmcli \
     modemmanager \
     chrony \
     chronyc \
