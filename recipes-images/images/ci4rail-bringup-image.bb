@@ -95,6 +95,7 @@ IMAGE_INSTALL += " \
     netio-monitor \
     dfu-util \
     netio-dfu \
+    io4edge-cli \
     dhcp-server \
     ttynvt \
     serial-test \
