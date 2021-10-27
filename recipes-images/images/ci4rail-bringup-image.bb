@@ -96,5 +96,7 @@ IMAGE_INSTALL += " \
     dfu-util \
     netio-dfu \
     dhcp-server \
-    ttynvt \ 
+    ttynvt \
+    serial-test \
+    python3-pyserial \
 "
