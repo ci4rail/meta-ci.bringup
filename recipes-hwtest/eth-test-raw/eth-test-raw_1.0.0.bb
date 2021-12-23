@@ -1,4 +1,9 @@
-DESCRIPTION = "Raw Ethernet Test Client"
+SUMMARY = "Raw Ethernet Test Client"
+DESCRIPTION = "\
+               Simple test tool for ethernet interfaces.\
+               Tests a ethernet NIC against a NIC on a peer machine using raw ethernet packets.\
+               "
+HOMEPAGE = "https://github.com/ci4rail/eth-test-raw/"
 
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
