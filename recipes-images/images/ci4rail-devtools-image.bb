@@ -89,7 +89,6 @@ IMAGE_INSTALL +=  " packagegroup-boot \
                     eth-test-raw \
                     netio-monitor \
                     dfu-util \
-                    netio-dfu \
                     io4edge-cli \
                     ttynvt \
                     serial-test \
