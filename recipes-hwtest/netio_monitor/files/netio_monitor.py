@@ -38,7 +38,7 @@ def main(args):
         if len(line) == 0:
             print("netio closed socket. Fatal. Exit")
             break
-        
+
         line = line.replace('\n','')
 
         if line.startswith("ERR: "):
@@ -61,7 +61,7 @@ def main(args):
         if (datetime.datetime.now() - last_info_print).total_seconds() >= 5:
             print("Netio still alive")
             last_info_print = datetime.datetime.now()
-    
+
     return exit_code
 
 def command_line_args_parsing():

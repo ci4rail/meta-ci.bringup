@@ -2,7 +2,7 @@ Fix compile on sytems using libc++ instead of libstdc++
 
 libc++ does not really implement __gnu_cxx namespace and it
 compiles fine without this namespace, therefore detect libc++
-and if it is used them exclude this namespace 
+and if it is used them exclude this namespace
 
 See https://github.com/stressapptest/stressapptest/issues/47
 
@@ -25,4 +25,3 @@ Signed-off-by: Khem Raj <raj.khem@gmail.com>
 +#endif  // _LIBCPP_VERSION
  #endif  // __ANDROID__
  using namespace std;
-

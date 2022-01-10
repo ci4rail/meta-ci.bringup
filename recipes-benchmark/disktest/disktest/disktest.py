@@ -25,7 +25,8 @@ def read_test(file, block_size, blocks_count):
     for i in range(blocks_count):
         buff = os.read(f, block_size)
         if buff[0] != i & 0xFF:
-            raise RuntimeError(f"verify error at block {i}, data read: {buff[0]}")
+            raise RuntimeError(
+                f"verify error at block {i}, data read: {buff[0]}")
 
     os.close(f)
     return time() - start
@@ -33,7 +34,7 @@ def read_test(file, block_size, blocks_count):
 
 def main(file, block_size, blocks_count):
     print(f"write: {write_test(file, block_size, blocks_count)}")
-    print(f"read: {write_test(file, block_size, blocks_count)}")
+    print(f"read: {read_test(file, block_size, blocks_count)}")
 
 
 if __name__ == "__main__":

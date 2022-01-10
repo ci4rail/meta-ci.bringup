@@ -35,4 +35,3 @@ class SocketReader:
             blocks.append(self._sock.recv(length).decode())
             read_size = min(read_size * 2, size, self.bufsize)
         return "".join(blocks)
-
