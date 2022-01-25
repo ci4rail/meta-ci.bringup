@@ -1,4 +1,4 @@
-# meta-ci4rail-bsp
+# meta-ci4rail-devtools
 
 This layer provides recipes used for HW platform tests and bringup of Ci4Rail Hardware.
 
@@ -11,7 +11,7 @@ This layer depends on:
 
 ## Build
 
-See [build instructions](https://github.com/ci4rail/yocto-images/tree/cleanup#building) from Ci4Rail repository for build definitons and scripts for yocto builds.
+See [build instructions](https://github.com/ci4rail/yocto-images#building) from Ci4Rail repository for build definitons and scripts for yocto builds.
 
 ## Maintainers
 
