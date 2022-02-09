@@ -35,4 +35,5 @@ IMAGE_INSTALL += "\
                   eth-test-raw \
                   netio-monitor \
                   serial-test \
+                  dfu-util \
                   "
