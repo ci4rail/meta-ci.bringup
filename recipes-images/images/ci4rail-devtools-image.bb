@@ -36,6 +36,7 @@ IMAGE_INSTALL += "\
                   netio-monitor \
                   serial-test \
                   dfu-util \
+                  i2c-tools \
                   python3-pyserial \
                   picocom \
                   lrzsz \
