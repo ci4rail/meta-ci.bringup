@@ -37,4 +37,8 @@ IMAGE_INSTALL += "\
                   serial-test \
                   dfu-util \
                   i2c-tools \
+                  python3-pyserial \
+                  picocom \
+                  lrzsz \
+                  alsa-utils \
                   "
