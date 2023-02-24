@@ -30,7 +30,6 @@ IMAGE_INSTALL += "\
                   fio \
                   lshw \
                   hwdata \
-                  gpsdtestclient \
                   disktest \
                   eth-test-raw \
                   netio-monitor \
@@ -42,3 +41,4 @@ IMAGE_INSTALL += "\
                   lrzsz \
                   alsa-utils \
                   "
+#                  gpsdtestclient

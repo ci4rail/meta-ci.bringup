@@ -12,7 +12,7 @@ SRC_URI = "git://github.com/ci4rail/eth-test-raw/;protocol=https;branch=main"
 
 SRCREV = "${AUTOREV}"
 
-RDEPENDS_${PN} = "python3 python3-core"
+RDEPENDS:${PN} = "python3 python3-core"
 
 S = "${WORKDIR}/git"
 
@@ -26,8 +26,8 @@ do_install() {
     install -m 0755 ${S}/eth-test-raw-server.py ${D}${bindir}/eth-test-raw-server
 }
 
-FILES_${PN} += "${bindir}/ethtestraw_lib/common.py"
-FILES_${PN} += "${bindir}/ethtestraw_lib/__init__.py"
-FILES_${PN} += "${bindir}/ethtestraw_lib/mac_addr.py"
-FILES_${PN} += "${bindir}/eth-test-raw-client.py"
-FILES_${PN} += "${bindir}/eth-test-raw-server.py"
+FILES:${PN} += "${bindir}/ethtestraw_lib/common.py"
+FILES:${PN} += "${bindir}/ethtestraw_lib/__init__.py"
+FILES:${PN} += "${bindir}/ethtestraw_lib/mac_addr.py"
+FILES:${PN} += "${bindir}/eth-test-raw-client.py"
+FILES:${PN} += "${bindir}/eth-test-raw-server.py"

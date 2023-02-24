@@ -13,7 +13,7 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=55ea9d559f985fb4834317d8ed6b9e58"
 # LIBAIO is required for raw disk tests. If missing, disk tests abort after first
 # disk write. This dependency was missing in
 # meta-openembedded/meta-oe/recipes-benchmark/stressapptest/stressapptest_1.0.9.bb
-DEPENDS_append = " libaio"
+DEPENDS:append = " libaio"
 
 SRC_URI = "\
            git://github.com/stressapptest/stressapptest \
