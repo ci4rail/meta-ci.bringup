@@ -10,7 +10,7 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda
 
 SRC_URI = "git://github.com/ci4rail/eth-test-raw/;protocol=https;branch=main"
 
-SRCREV = "${AUTOREV}"
+SRCREV = "f5880da20c0b4d7c35677beea125875553b10d46"
 
 RDEPENDS_${PN} = "python3 python3-core"
 
