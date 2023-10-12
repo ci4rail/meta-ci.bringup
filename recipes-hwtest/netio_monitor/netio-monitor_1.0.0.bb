@@ -9,7 +9,6 @@ HOMEPAGE = "https://ci4rail.com"
 LICENSE = "Apache-2.0"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/Apache-2.0;md5=89aea4e17d99a7cacdbeed46a0096b10"
 
-FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
 SRC_URI += "file://netio_monitor.py file://socket_reader.py "
 
 FILES_${PN} += "${bindir}/netio_monitor.py ${bindir}/socket_reader.py"
